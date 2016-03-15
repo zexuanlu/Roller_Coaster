@@ -1,0 +1,5 @@
+Name: zexuan Luo
+
+First in the myinit function, I calculate all coordinates for points, their normal, tangent, binormal and put them into the corresponding point lists. I calculate the normal, binormal and tangent according to the formule in the ppt on the course website. So to draw the rail, I just need to go through a loop to take out the point and its cooresponding normal or binormal for calculation and draw quads. I take the binormal and normal vectors to find four points for each of the left and right rail to form the real rail. To draw the sky and ground, I draw a cube and put the ground texture and five sky texture on differnt faces. To set up the glulookat function, I take points from the lists of points cordinates to form the first three coordinate. Then I add a partial tangent vector to the original coordinate to fill in the middle three coordinate. Then I use the calculated normal vector to be the normal. I have combined the step one with the last step.
+
+For the extra credit, I have done the T-shaped rail cross-section and modify the velocity in terms of gravity.
